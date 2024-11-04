@@ -75,3 +75,4 @@ on c.player=bat.batter
 left join (select bowler, count(distinct match_id) as total_bolling
 from cricket
 group by bowler) as boll
+on c.player=boll.bowler;
